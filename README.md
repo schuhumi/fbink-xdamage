@@ -34,3 +34,7 @@ Then in the shell you compiled fbink-xdamage in start it as root. If you are a u
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path/to/fbink-xdamage/FBInk/Release/; env DISPLAY=:0 ./fbink_xdamage
 ```
+
+5. Run any other xclient
+
+Now you can run any xclient you want (xeyes / mate-session / whatever), you also don't need to be careful with the window title anymore as awesome is out of the way. You only may have to prepend your command with "env DISPLAY=:0", as that might not be exported. The window of whatever you started should appear/update just fine on the epaper screen as long as fbink_xdamage runs.
